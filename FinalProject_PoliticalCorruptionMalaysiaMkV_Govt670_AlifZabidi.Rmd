@@ -82,7 +82,7 @@ As a final step, both sets of predictors will be used to conduct a brief test of
 
 ### Data Cleaning
 
-```{r}
+```{r echo=FALSE}
 # Read in Vdem Dataset
 vdem_data <- readRDS("Data/V-Dem-CY-Full+Others-v11.1.rds")
 ```
