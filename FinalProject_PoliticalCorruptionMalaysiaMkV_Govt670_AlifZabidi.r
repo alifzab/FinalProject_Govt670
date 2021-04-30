@@ -182,8 +182,8 @@ mal_plot <- clean_data %>%
   geom_point() +
   labs(title = "Figure 1: Key Determinants of Corruption (Malaysia, 1980 - 2020)",
        subtitle = "Judicial accountability and civil liberties rose steeply, in step with a rapid decline in \nboth corruption indices. However, a return to previous levels has occurred only \na few years later",
-       x = "Index Values",
-       y = "Year")
+       x = "Year",
+       y = "Index Values")
 
 # Philippine Indicators
 
@@ -196,8 +196,8 @@ phil_plot <- clean_data2 %>%
   geom_point() +
   labs(title = "Figure 2: Key Determinants of Corruption (Philippines, 1980 - 2020)",
        subtitle = "Judicial accountability has fallen steeply in the Philippines, while other indicators \nremain relatively stable though both corruption indices increased as a response",
-       x = "Index Values",
-       y = "Year")
+       x = "Year",
+       y = "Index Values")
 
 par(mfrow = c(1,2))
 mal_plot + scale_fill_discrete(labels = c("Civil Liberties",
@@ -233,10 +233,14 @@ tai_plot <- newdata %>%
   geom_line() + 
   geom_point() +
   labs(title = "Figure 3: Key Determinants of Corruption (Taiwan, 1980 - 2020)",
-       subtitle = "Taiwan has lower corruption indices overall, and major increases in civil liberties and judicial \naccountability seem to have a lower impact on reducing corruption, so the relationship between \nindicators may differ by context",
-       x = "Index Values",
-       y = "Year")
+       subtitle = "Taiwan has lower corruption indices overall, and major increases in civil liberties and \njudicial accountability seem to have a lower impact on reducing corruption, so the \nrelationship between indicators may differ by context",
+       x = "Year",
+       y = "Index Values")
 
 tai_plot
 
 ## 
+
+purl("FinalProject_PoliticalCorruptionMalaysiaMkV_Govt670_AlifZabidi.rmd",
+     "FinalProject_PoliticalCorruptionMalaysiaMkV_Govt670_AlifZabidi.r",
+     documentation = 0)
