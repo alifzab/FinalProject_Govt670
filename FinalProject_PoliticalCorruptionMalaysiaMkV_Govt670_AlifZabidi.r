@@ -180,7 +180,7 @@ mal_plot <- clean_data %>%
   ggplot(aes(year, values, col = index)) +
   geom_line() + 
   geom_point() +
-  labs(title = "Figure 1: Key Determinants of Corruption (Malaysia, 1980 - 2020)",
+  labs(title = "Figure 1: Key predictors of Corruption (Malaysia, 1980 - 2020)",
        subtitle = "Judicial accountability and civil liberties rose steeply, in step with a rapid decline in \nboth corruption indices. However, a return to previous levels has occurred only \na few years later",
        x = "Year",
        y = "Index Values")
@@ -194,7 +194,7 @@ phil_plot <- clean_data2 %>%
   ggplot(aes(year, values, col = index)) +
   geom_line() + 
   geom_point() +
-  labs(title = "Figure 2: Key Determinants of Corruption (Philippines, 1980 - 2020)",
+  labs(title = "Figure 2: Key predictors of Corruption (Philippines, 1980 - 2020)",
        subtitle = "Judicial accountability has fallen steeply in the Philippines, while other indicators \nremain relatively stable though both corruption indices increased as a response",
        x = "Year",
        y = "Index Values")
@@ -232,7 +232,7 @@ tai_plot <- newdata %>%
   ggplot(aes(year, values, col = index)) +
   geom_line() + 
   geom_point() +
-  labs(title = "Figure 3: Key Determinants of Corruption (Taiwan, 1980 - 2020)",
+  labs(title = "Figure 3: Key predictors of Corruption (Taiwan, 1980 - 2020)",
        subtitle = "Taiwan has lower corruption indices overall, and major increases in civil liberties and \njudicial accountability seem to have a lower impact on reducing corruption, so the \nrelationship between indicators may differ by context",
        x = "Year",
        y = "Index Values")
@@ -240,7 +240,3 @@ tai_plot <- newdata %>%
 tai_plot
 
 ## 
-
-purl("FinalProject_PoliticalCorruptionMalaysiaMkV_Govt670_AlifZabidi.rmd",
-     "FinalProject_PoliticalCorruptionMalaysiaMkV_Govt670_AlifZabidi.r",
-     documentation = 0)
