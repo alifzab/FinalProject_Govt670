@@ -6,6 +6,8 @@ The project is essentially an exploratory data analysis of the "Varieties of Dem
 
 To access the data requried for this analysis, please use the following google drive link: https://drive.google.com/drive/u/0/folders/1S8VdkC7a0IfHzqyoUkV9ORWfm6rJUpQk
 
+The data can also be found directly from the VDem Institute using this link: https://www.v-dem.net/en/data/data/v-dem-dataset-v111/
+
 Please note that users should place the .rds file into a subfolder within the project named "Data". Alternatively, the entire folder in the drive could be downloaded as is into the main project folder. This will allow the .rmd to run/knit without any alteration of the code. 
 
 Should there be any inquiries, please direct them to az8465a@student.american.edu or alifiskandarzabidi@gmail.com
